@@ -1,0 +1,14 @@
+<h1> Places I have been! </h1>
+
+<p>You have visisted <%= @places.count %> places</p>
+
+<ul>
+<% for places in @places%>
+<li> <a href="/places/<%= places["id"]%>"> <%= places["name"]%></a>
+</li>
+<% end %>
+</ul>
+
+
+
+<p> <a href="/places/new"> Add a place </a></p>
